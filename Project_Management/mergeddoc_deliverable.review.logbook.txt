@@ -5,6 +5,8 @@ Eu acho que este user story está adequado, mas a implementação parece me que 
 Uma sugestão seria usarmos criptografia, para darmos uma certa segurança aos jogadores.
 
 Review about User Story 2
+Eu acho que este user story é relevante, pois também achei irritante o comporatamento da camera
+e a implementação para resolver este problema parece me ser rápido e simples de ser fazer.
 
 Review about User Story 3
 
