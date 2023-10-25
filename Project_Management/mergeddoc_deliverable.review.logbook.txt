@@ -18,3 +18,11 @@ a experiência do jogo. Uma sugestão seria em vez de mover a câmara clicando n
 seria arrastando a tela para mover a tela. Outra sugestão seria para aproximar e afastar no scoll do rato, em vez de ser nas teclas "+" e "-".
 
 Review about User Story 3
+
+
+Review, André Santos 62331
+
+Review about User Story 2
+Após analisar este US, o problema parece-me pertinente. Como sugestão ao problema, sugiro a criação de um menu onde estariam presentes todas as
+unidades do jogador onde ao clicar em certa unidade, a câmara centralizar-se-ia na mesma. Desta forma facilitando a navegação das unidades evitando
+também qualquer confusão relativa a qual unidade está selecionada no momento.
