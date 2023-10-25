@@ -1,1 +1,9 @@
+User stories
 
+(Duarte Inácio 62397)
+1. Eu como jogador de FreeCol, quero que o jogo implemente medidas de segurança na camada IP ao conectar-me a um servidor, 
+para garantir a proteção das minhas informações pessoais e proporcionar uma experiência de jogo mais segura.
+
+Description User Story 1: Para participar num jogo multiplayer, os jogadores têm de se conectar diretamente aos endereços
+de IP dos outros jogadores, o que representa um risco de segurança significativo, pois os IPs podem ser recolhidos e 
+explorados por pessoas mal intencionadas para recolher informações pessoas e potenciais ataques. 
