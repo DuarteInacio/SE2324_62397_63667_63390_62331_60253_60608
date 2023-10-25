@@ -18,7 +18,7 @@ ocorrem movimentos de unidades acidentalmente. A visão de jogador poderia ser f
 
 
 (Tiago Santos 63390)
-3. Como jogador de FreeCol, quero centrar o mapa diretamente nas as unidades que tenho disponíveis, para não ter de as procurar manualmente no mapa.
+3. Como jogador de FreeCol, quero centrar o mapa diretamente nas unidades que tenho disponíveis, para não ter de as procurar manualmente no mapa.
 
 Description User Story 3: Depois de navegar pelo mapa, tem de se procurar manualmente a unidade que se quer usar. Deveria haver a possibilidade de ir diretamente às tropas pretendidas,
 com um clique de um botão (em vez de ter de procurar pelo mapa).
