@@ -1,7 +1,7 @@
 User stories
 
 (Duarte Inácio 62397)
-1. Eu como jogador de FreeCol, quero que o jogo implemente medidas de segurança na camada IP ao conectar-me a um servidor e que seja mais fácil de correr o modo multiplayer, 
+1. Eu, como jogador de FreeCol, quero que o jogo implemente medidas de segurança na camada IP ao conectar-me a um servidor e que seja mais fácil de correr o modo multiplayer, 
 para garantir a proteção das minhas informações pessoais e proporcionar uma experiência de jogo mais segura.
 
 Description User Story 1: Para participar num jogo multiplayer, os jogadores têm de se conectar diretamente aos endereços
@@ -11,7 +11,7 @@ o modo multiplayer é bastante confuso de correr.
 
 
 (Tiago Santos 63390)
-2. Eu como jogador de FreeCol, quero ter movimentos de câmara e de unidades(tropas, colonos, ...) mais fáceis de utilizar e diferenciar, para mover com facilidade e não ocorrerem movimentos acidentais.
+2. Eu, como jogador de FreeCol, quero ter movimentos de câmara e de unidades(tropas, colonos, ...) mais fáceis de utilizar e diferenciar, para mover com facilidade e não ocorrerem movimentos acidentais.
 
 Description User Story 2: O movimento da câmara de visão do jogador é complicado de diferenciar do movimento das unidades, pelo que
 ocorrem movimentos de unidades acidentalmente. A visão de jogador poderia ser feita com o arrastar do mouse. Para além disso, 
