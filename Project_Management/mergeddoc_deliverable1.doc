@@ -6,5 +6,13 @@ para garantir a proteção das minhas informações pessoais e proporcionar uma 
 
 Description User Story 1: Para participar num jogo multiplayer, os jogadores têm de se conectar diretamente aos endereços
 de IP dos outros jogadores, o que representa um risco de segurança significativo, pois os IPs podem ser recolhidos e 
-explorados por pessoas mal intencionadas para recolher informações pessoas e potenciais ataques. Para além disso, 
+explorados por pessoas mal intencionadas para recolher informações pessoais e potenciais ataques. Para além disso, 
 o modo multiplayer é bastante confuso de correr. 
+
+
+(Tiago Santos 63390)
+2. Eu como jogador de FreeCol, quero ter movimentos de câmara e de unidades(tropas, colonos, ...) mais fáceis de utilizar e diferenciar, para mover com facilidade e não ocorrerem movimentos acidentais.
+
+Description User Story 2: O movimento da câmara de visão do jogador é complicado de diferenciar do movimento das unidades, pelo que
+ocorrem movimentos de unidades acidentalmente. A visão de jogador poderia ser feita com o arrastar do mouse. Para além disso, poderia
+colocar a possibilidade de ir diretamente às tropas, com um clique de um botão (em vez de ter de procurar pelo mapa).
