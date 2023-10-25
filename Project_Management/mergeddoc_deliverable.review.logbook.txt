@@ -1,2 +1,9 @@
 Review, Antonio Palmeirim 63667
+
 Review about User Story 1
+Eu acho que este user story está adequado, mas a implementação parece me que vai ser difícil.
+Uma sugestão seria usarmos criptografia, para darmos uma certa segurança aos jogadores.
+
+Review about User Story 2
+
+Review about User Story 3
