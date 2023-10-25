@@ -29,3 +29,10 @@ Review about User Story 3
 Após analisar este US, o problema parece-me pertinente. Como sugestão ao problema, sugiro a criação de um menu onde estariam presentes todas as
 unidades do jogador onde ao clicar em certa unidade, a câmara centralizar-se-ia na mesma. Desta forma facilitando a navegação das unidades evitando
 também qualquer confusão relativa a qual unidade está selecionada no momento.
+
+Review, Luís Serrano 60253
+
+Rebiew about User Story 4
+Após analisar este US, pareceu-me ser uma questão bastante pretinente, porque para percebermos melhor se estamos a evoluir consoante os outros jogadores,
+haver uma tabela que nos permite ver estatísticas de outros jogadores seria muito proveitoso. Uma sugestão seria criar uma tablea bem delineada, para
+conseguirmos ter "overview" mais organizada sobre o progresso do mundo.
