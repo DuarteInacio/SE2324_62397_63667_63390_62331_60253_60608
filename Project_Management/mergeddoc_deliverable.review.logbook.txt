@@ -9,6 +9,8 @@ Eu acho que este user story é relevante, pois também achei irritante o compora
 e a implementação para resolver este problema parece me ser rápido e simples de ser fazer.
 
 Review about User Story 3
+Este User Story é bastante parecido ao 2 pois tem a ver como o jogador vizualiza o mapa, e tal como achei no outro, acho
+que é necessário para uma fluidez maior no jogo, para que seja agradável jogar.
 
 
 Review, Duarte Inácio 62397
