@@ -15,6 +15,6 @@ Review about User Story 2
 Parece me uma US bastante importante, já que os jogadores podem acidentalmente mover unidades quando,
 na realidade, pretendem apenas mover a câmera ou vice-versa. Isso pode acabar por ser frustante e afetar
 a experiência do jogo. Uma sugestão seria em vez de mover a câmara clicando no canto da tela(canto superior, inferior, esquerdo ou direito), 
-seria arrastando a tela para mover a tela.
+seria arrastando a tela para mover a tela. Outra sugestão seria para aproximar e afastar no scoll do rato, em vez de ser nas teclas "+" e "-".
 
 Review about User Story 3
