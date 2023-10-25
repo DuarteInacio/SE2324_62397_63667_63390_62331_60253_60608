@@ -24,3 +24,8 @@ Description User Story 3: Depois de navegar pelo mapa, tem de se procurar manual
 com um clique de um botão (em vez de ter de procurar pelo mapa).
 
 
+(Rafael Tavares 60608)
+4. Como jogador competitivo, quero uma tabela classificativa que acompanhe as pontuações/estatísticas dos jogadores.
+
+Description User Story 4: Ao jogar, acho útil a presença de uma tabela classificativa que acompanhe as pontuações/estatísticas de cada participante tanto em jogos singleplayer
+como em jogos multiplayer, permitindo-me comparar o meu desempenho com o de outros.
