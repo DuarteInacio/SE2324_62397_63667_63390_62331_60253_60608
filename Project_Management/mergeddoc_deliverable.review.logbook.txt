@@ -27,6 +27,11 @@ irá tornar o jogo menos aborrecido nesse aspeto.
 Uma sugestão seria, tal como o André disse, a criação de um menu onde estariam presentes todas as unidades do jogador onde ao clicar em certa unidade,
 a câmara centralizar-se-ia na mesma.
 
+Review about User Story 4
+
+Parece-me uma US interessante, já que por vezes perdemos um pouco a ideia de como estamos relativamente aos outros jogadores. Com esta implementação 
+conseguia ter uma maior noção do meu desempenho no jogo. Uma sugestão seria colocar na tela uma tabela com o top 3 com maior pontuação ou até mesmo
+colocando a tabela de classificação de todos os paises.
 
 Review, André Santos 62331
 
