@@ -1,7 +1,7 @@
 Code Smells
 
 1- Long Method
-Existem métodos demasiado grandes que tornam o código dificil de entender. Esses métodos dificultão a manutenção e a leitura do código.
+Existem métodos demasiado grandes que tornam o código dificil de entender. Esses métodos dificultam a manutenção e a leitura do código.
 
 Resolução Code Smell 1:
 Para resolver este problema de métodos demasiado longos, eu recomendaria separá-los em métodos mais pequenos e mais especificos, ou seja,
