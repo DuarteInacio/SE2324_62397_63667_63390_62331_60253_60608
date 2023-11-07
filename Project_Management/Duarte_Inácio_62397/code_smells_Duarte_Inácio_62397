@@ -1,6 +1,6 @@
 Code Smells
 
-1- Long Method
+Code Smell 1 - Long Method
 Existem métodos demasiado grandes que tornam o código dificil de entender. Esses métodos dificultam a manutenção e a leitura do código.
 Um exemplo deste code smell no código da freeCol é na classe ConnectController o método startSavedGame (este método tem quase 100 linhas
 de código demostra a complexidade gigante deste código).
@@ -11,3 +11,12 @@ ter métodos mais pequenos em que cada um realize uma única tarefa bem definida
 em dois mais pequenos, já que a parte inicial é para obter uma sugestão do nome do jogador, single/multiplayer ... e a parte final
 refere-se a carregar as opções do cliente guardadas neste jogo.
 
+
+Code Smell 2 - Message Chain
+Há várias chamadas de métodos encadeados numa única linha de código, como por exemplo na classe FreeColMapLoader no método loadMap na linha 
+tile.setType(game.getSpecification().getTileType(template.getType().getId()));(linha 95)
+
+Resolução Code Smell 2:
+Para resolver este problema, eu optaria por separar as chamadas aos métodos que são feitas, guardando os resultados intermédios em variáveis.
+
+Code Smell 3 - 
