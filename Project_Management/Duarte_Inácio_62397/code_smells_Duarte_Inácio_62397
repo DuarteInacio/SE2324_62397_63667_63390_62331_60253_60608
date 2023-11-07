@@ -2,8 +2,12 @@ Code Smells
 
 1- Long Method
 Existem métodos demasiado grandes que tornam o código dificil de entender. Esses métodos dificultam a manutenção e a leitura do código.
+Um exemplo deste code smell no código da freeCol é na classe ConnectController o método startSavedGame (este método tem quase 100 linhas
+de código demostra a complexidade gigante deste código).
 
 Resolução Code Smell 1:
 Para resolver este problema de métodos demasiado longos, eu recomendaria separá-los em métodos mais pequenos e mais especificos, ou seja,
-ter métodos mais pequenos em que cada um realize uma única tarefa bem definida.
+ter métodos mais pequenos em que cada um realize uma única tarefa bem definida. No exemplo que têm em cima, separava este método
+em dois mais pequenos, já que a parte inicial é para obter uma sugestão do nome do jogador, single/multiplayer ... e a parte final
+refere-se a carregar as opções do cliente guardadas neste jogo.
 
