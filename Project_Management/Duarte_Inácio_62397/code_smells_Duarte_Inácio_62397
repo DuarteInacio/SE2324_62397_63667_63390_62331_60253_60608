@@ -19,4 +19,11 @@ tile.setType(game.getSpecification().getTileType(template.getType().getId()));(l
 Resolução Code Smell 2:
 Para resolver este problema, eu optaria por separar as chamadas aos métodos que são feitas, guardando os resultados intermédios em variáveis.
 
-Code Smell 3 - 
+Code Smell 3 - Large Class
+Como podemos verificar, a classe InGameController tem mais de 5000 linhas de código, ou seja, é um sinal de que esta classe está a fazer demasiadas
+coisas tornando o código dificil de entender e ler.
+
+Resolução Code Smell 3:
+Começaria por dividir esta classe em classes mais pequenas em que cada uma teria uma resposabilidade especifica dentro desta classe InGameController.
+Uma maneira de pensar poderia ser, criando diferentes classes para lidar com os diferentes tipos(jogadores, colonias, unidades, etc), isso iria reduzir bastante
+a complexidade da classe InGameController e ficaria mais fácil de gerenciar e entender.
