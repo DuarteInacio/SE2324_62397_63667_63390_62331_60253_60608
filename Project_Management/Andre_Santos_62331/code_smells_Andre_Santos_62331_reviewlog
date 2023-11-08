@@ -1,3 +1,7 @@
 Review feita por Luís Serrano, 60253:
     Concordo com todos os code smells apresentados, apenas acho que a print no primeiro smell poderia ter sido mais explícita, colapsando alguns métodos
     para verificarmos melhor a extensão do código. No entanto, o path em questão é-nos fornecido, portanto foi fácil verificar a veracidade!
+
+Review feita por Tiago Santos, 63390:
+Estou de acordo com todas as indicações de problemas de código mencionadas. No entanto, também penso que a descrição do primeiro problema poderia ter sido
+mais detalhada. 
