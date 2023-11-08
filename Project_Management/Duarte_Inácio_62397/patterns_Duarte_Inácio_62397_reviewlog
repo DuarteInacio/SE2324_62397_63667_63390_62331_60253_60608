@@ -1,1 +1,5 @@
+Reviewer: Antonio Palmeirim
 
+Os design patterns encontrados parecem me aceitaveis e explicitos, exceto o ultimo caso. No use case diagram
+no final do Facade Pattern, poderia por as diferentes operacoes que sao escondidos ao utilizador, e que sao so
+acessiveis a partir da interface que liga o utilizador e o sistema.
