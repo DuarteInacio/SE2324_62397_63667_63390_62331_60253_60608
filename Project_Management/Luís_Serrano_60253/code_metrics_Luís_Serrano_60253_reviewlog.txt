@@ -1,0 +1,4 @@
+Reviewer: Antonio Palmeirim
+
+Estes metrics estao bem estrturados e bem explicados. So recomendava por alguns prints com a informacao a mostrar
+os dados a qual estas a referir. 
