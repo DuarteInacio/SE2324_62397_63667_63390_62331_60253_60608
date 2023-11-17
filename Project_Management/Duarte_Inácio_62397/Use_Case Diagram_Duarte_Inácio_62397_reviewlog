@@ -1,8 +1,12 @@
-Reviewer: Antonio Palmeirim
-
+Reviewer: Antonio Palmeirim 63667
+Review 1 (16/11):
 Na minha opinao o use case diagram esta bem estruturado com todas as opcoes possiveis descritos.
 A descricao do use case e unico, o que neste caso faz sentido pois o jogador tem o mesmo comportamento com todos
 as opcoes do menu.
+
+Review 2 (17/11):
+Com as modificacoes feitas, e depois de um pouco de auto-aprendizagem, considero agora que e mais correto os use cases agora,
+com tudo dividido, isto e, um use case template para cada interacao entre o sistema e jogador.
 
 Reviewer: André Santos 62331
 Review 1 (16/11):
@@ -12,8 +16,8 @@ Review 2 (17/11):
 O diagrama já esta bastante mais simples. De resto nada a apontar.
 
 Reviewer: Tiago Santos
-Review 1 (16/11)
+Review 1 (16/11):
 A meu ver, o use case template deveria ser para cada uma das opções do menu inicial. De resto concordo com o mencionado.
 
-Review 2 (17/11)
+Review 2 (17/11):
 Agora sim, tendo 1 use case template para cada opção do menu inicial, considero que o documento está como esperado.
