@@ -1,5 +1,6 @@
 Reviewer: António Palmeirim 63667 
 
+Review 1 (14/11):
 Os code smells estão bem explicados e a sua localização e resolução também. A única grelha que encontro é na especificação do path para o code smell,
 onde tem pontos (".") mete barras ("/"). De resto esta otimo.
 
