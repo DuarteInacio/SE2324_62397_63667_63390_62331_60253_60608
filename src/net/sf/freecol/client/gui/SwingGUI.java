@@ -196,6 +196,7 @@ public class SwingGUI extends GUI {
     private boolean gotoStarted = false;
 
 
+    private int zoom = 0;
     /**
      * Create the GUI.
      *
@@ -1484,6 +1485,7 @@ public class SwingGUI extends GUI {
         float scale = this.scaledImageLibrary.getScaleFactor();
         float newScale = scale + ImageLibrary.SCALE_STEP;
         if (scale < newScale && newScale <= ImageLibrary.MAX_SCALE) {
+            zoom +=1;
             changeMapScale(newScale);
         }
     }
@@ -1496,10 +1498,18 @@ public class SwingGUI extends GUI {
         float scale = this.scaledImageLibrary.getScaleFactor();
         float newScale = scale - ImageLibrary.SCALE_STEP;
         if (ImageLibrary.MIN_SCALE <= newScale && newScale < scale) {
+            zoom -=1;
             changeMapScale(newScale);
         }
     }
-
+    /**
+     * {@inheritDoc}
+     */
+    @Override
+    public void zoomResetMap() {
+        float scale = this.scaledImageLibrary.getScaleFactor();
+        changeMapScale(scale -(zoom* ImageLibrary.SCALE_STEP));
+    }
     private void changeMapScale(float newScale) {
         imageCache.clear();
         if (this.mapViewer != null) {

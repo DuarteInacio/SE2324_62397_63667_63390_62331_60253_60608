@@ -1684,6 +1684,9 @@ public class GUI extends FreeColClientHolder {
         return false;
     }
 
+    public boolean canZoomResetMap() {
+        return false;
+    }
     /**
      * Zoom the map in.
      *
@@ -1698,7 +1701,7 @@ public class GUI extends FreeColClientHolder {
      */
     public void zoomOutMap() {}
 
-
+    public void zoomResetMap() {}
     // Miscellaneous gui manipulation
 
     /**

@@ -27,23 +27,8 @@ import javax.swing.ButtonGroup;
 import javax.swing.JMenu;
 
 import net.sf.freecol.client.FreeColClient;
-import net.sf.freecol.client.gui.action.ChangeWindowedModeAction;
-import net.sf.freecol.client.gui.action.DetermineHighSeasAction;
-import net.sf.freecol.client.gui.action.DisplayGridAction;
-import net.sf.freecol.client.gui.action.DisplayTileTextAction;
+import net.sf.freecol.client.gui.action.*;
 import net.sf.freecol.client.gui.action.DisplayTileTextAction.DisplayText;
-import net.sf.freecol.client.gui.action.MapControlsAction;
-import net.sf.freecol.client.gui.action.NewAction;
-import net.sf.freecol.client.gui.action.NewEmptyMapAction;
-import net.sf.freecol.client.gui.action.OpenAction;
-import net.sf.freecol.client.gui.action.PreferencesAction;
-import net.sf.freecol.client.gui.action.QuitAction;
-import net.sf.freecol.client.gui.action.SaveAction;
-import net.sf.freecol.client.gui.action.ScaleMapAction;
-import net.sf.freecol.client.gui.action.ShowMainAction;
-import net.sf.freecol.client.gui.action.StartMapAction;
-import net.sf.freecol.client.gui.action.ZoomInAction;
-import net.sf.freecol.client.gui.action.ZoomOutAction;
 import net.sf.freecol.client.gui.panel.Utility;
 import net.sf.freecol.common.debug.FreeColDebugger;
 
@@ -143,7 +128,7 @@ public class MapEditorMenuBar extends FreeColMenuBar {
         menu.addSeparator();
         menu.add(getMenuItem(ZoomInAction.id));
         menu.add(getMenuItem(ZoomOutAction.id));
-
+        menu.add(getMenuItem(ZoomResetAction.id));
         add(menu);
     }
 
