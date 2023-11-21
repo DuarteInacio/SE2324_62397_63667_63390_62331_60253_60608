@@ -24,7 +24,7 @@ import net.sf.freecol.client.FreeColClient;
 
 /**
  * Super class for all actions that should be disabled when the
- * mapboard is not selected.
+ *  * mapboard is not selected.
  */
 public abstract class MapboardAction extends FreeColAction {
 
@@ -47,7 +47,7 @@ public abstract class MapboardAction extends FreeColAction {
      */
     @Override
     protected boolean shouldBeEnabled() { 
-        return super.shouldBeEnabled()  
+        return super.shouldBeEnabled()
             && !getGUI().isPanelShowing()
             && (getGame() == null
                 || freeColClient.isMapEditor()

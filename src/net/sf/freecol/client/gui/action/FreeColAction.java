@@ -67,7 +67,12 @@ public abstract class FreeColAction extends AbstractAction
      * pressed, disabled.
      */
     private static final int ORDER_BUTTON_COUNT = 4;
-    
+
+
+
+
+
+
     /**
      * A class used by Actions which have a mnemonic. Those Actions should
      * assign this listener to the JMenuItem they are a part of. This captures
@@ -76,6 +81,7 @@ public abstract class FreeColAction extends AbstractAction
      *
      * @author johnathanj
      */
+
     public class InnerMenuKeyListener implements MenuKeyListener {
 
         final int mnemonic;

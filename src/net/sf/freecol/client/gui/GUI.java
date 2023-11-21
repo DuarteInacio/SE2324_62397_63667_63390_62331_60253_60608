@@ -1694,6 +1694,8 @@ public class GUI extends FreeColClientHolder {
      */
     public void zoomInMap() {}
 
+    public void zoomReset() {}
+
     /**
      * Zoom the map out.
      *
