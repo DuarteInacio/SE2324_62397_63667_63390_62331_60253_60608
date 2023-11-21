@@ -1699,7 +1699,7 @@ public class GUI extends FreeColClientHolder {
      *
      * Used by: ZoomResetAction
      */
-    public void zoomReset() {}
+    public void zoomResetMap() {}
 
     /**
      * Zoom the map out.
@@ -1708,7 +1708,6 @@ public class GUI extends FreeColClientHolder {
      */
     public void zoomOutMap() {}
 
-    public void zoomResetMap() {}
     // Miscellaneous gui manipulation
 
     /**

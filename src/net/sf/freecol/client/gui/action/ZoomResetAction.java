@@ -22,6 +22,9 @@ package net.sf.freecol.client.gui.action;
 import java.awt.event.ActionEvent;
 
 import net.sf.freecol.client.FreeColClient;
+import net.sf.freecol.client.gui.GUI;
+import net.sf.freecol.common.model.Tile;
+import net.sf.freecol.common.model.Unit;
 
 
 /**
@@ -49,7 +52,13 @@ public class ZoomResetAction extends MapboardAction {
      */
     @Override
     public void actionPerformed(ActionEvent ae) {
-        getGUI().zoomReset();
+        getGUI().zoomResetMap();
         update();
+        final GUI gui = getGUI();
+        final Unit active = gui.getActiveUnit();
+        if (active != null) {
+            final Tile tile = active.getTile();
+            if (tile != null) gui.setFocus(tile);
+        }
     }
 }
