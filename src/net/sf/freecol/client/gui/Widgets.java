@@ -75,6 +75,7 @@ import net.sf.freecol.client.gui.panel.EuropePanel;
 import net.sf.freecol.client.gui.panel.EventPanel;
 import net.sf.freecol.client.gui.panel.FindSettlementPanel;
 import net.sf.freecol.client.gui.panel.FreeColPanel;
+import net.sf.freecol.client.gui.panel.GameStatisticsPanel;
 import net.sf.freecol.client.gui.panel.IndianSettlementPanel;
 import net.sf.freecol.client.gui.panel.InformationPanel;
 import net.sf.freecol.client.gui.panel.NewPanel;
@@ -1224,6 +1225,16 @@ public final class Widgets {
             = this.canvas.getExistingFreeColPanel(ReportMilitaryPanel.class);
         if (panel == null) {
             panel = new ReportMilitaryPanel(this.freeColClient);
+            this.canvas.showFreeColPanel(panel, PopupPosition.CENTERED, true);
+        }
+        return panel;
+    }
+
+    public FreeColPanel showStatisticsPanel() {
+        GameStatisticsPanel panel
+            = this.canvas.getExistingFreeColPanel(GameStatisticsPanel.class);
+        if (panel == null) {
+            panel = new GameStatisticsPanel(this.freeColClient);
             this.canvas.showFreeColPanel(panel, PopupPosition.CENTERED, true);
         }
         return panel;

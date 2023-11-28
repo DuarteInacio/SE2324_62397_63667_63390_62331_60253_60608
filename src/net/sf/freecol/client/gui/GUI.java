@@ -2387,6 +2387,13 @@ public class GUI extends FreeColClientHolder {
     public FreeColPanel showReportMilitaryPanel() { return null; }
 
     /**
+     * Show the Statistics Report.
+     * 
+     * @return The panel shown.
+     */
+    public FreeColPanel showStatisticsPanel() { return null; }
+
+    /**
      * Show the Naval Report.
      *
      * @return The panel shown.
