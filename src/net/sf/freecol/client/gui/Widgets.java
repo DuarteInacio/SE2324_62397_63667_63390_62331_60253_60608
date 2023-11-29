@@ -110,6 +110,7 @@ import net.sf.freecol.client.gui.panel.report.ReportReligiousPanel;
 import net.sf.freecol.client.gui.panel.report.ReportRequirementsPanel;
 import net.sf.freecol.client.gui.panel.report.ReportTradePanel;
 import net.sf.freecol.client.gui.panel.report.ReportTurnPanel;
+import net.sf.freecol.client.gui.panel.PlayableUnitsPanel;
 import net.sf.freecol.common.i18n.Messages;
 import net.sf.freecol.common.metaserver.ServerInfo;
 import net.sf.freecol.common.model.Colony;
@@ -135,6 +136,8 @@ import net.sf.freecol.common.model.UnitType;
 import net.sf.freecol.common.option.Option;
 import net.sf.freecol.common.option.OptionGroup;
 import net.sf.freecol.common.util.Utils;
+
+
 
 
 /**
@@ -1304,6 +1307,16 @@ public final class Widgets {
             this.canvas.showFreeColPanel(panel, PopupPosition.CENTERED, true);
         } else {
             panel.setMessages(messages);
+        }
+        return panel;
+    }
+
+
+    public FreeColPanel showPlayableUnitsPanel() {
+        PlayableUnitsPanel panel = this.canvas.getExistingFreeColPanel(PlayableUnitsPanel.class);
+        if (panel == null) {
+            panel = new PlayableUnitsPanel(this.freeColClient);
+            this.canvas.showFreeColPanel(panel, PopupPosition.CENTERED_RIGHT, true);
         }
         return panel;
     }

@@ -176,6 +176,7 @@ public class ActionManager extends OptionGroup {
         add(new ZoomInAction(freeColClient));
         add(new ZoomOutAction(freeColClient));
         add(new ZoomResetAction(freeColClient));
+        add(new ShowPlayableUnitsAction(freeColClient));
     }
 
     /**

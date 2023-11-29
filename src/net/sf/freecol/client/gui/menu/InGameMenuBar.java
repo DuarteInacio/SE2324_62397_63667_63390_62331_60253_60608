@@ -152,6 +152,7 @@ public class InGameMenuBar extends FreeColMenuBar {
         }
 
         menu.addSeparator();
+
         menu.add(getMenuItem(ZoomInAction.id));
         menu.add(getMenuItem(ZoomOutAction.id));
         menu.add(getMenuItem(ZoomResetAction.id));
@@ -163,6 +164,10 @@ public class InGameMenuBar extends FreeColMenuBar {
         menu.add(getMenuItem(EuropeAction.id));
         menu.add(getMenuItem(TradeRouteAction.id));
         menu.add(getMenuItem(FindSettlementAction.id));
+
+        menu.addSeparator();
+
+        menu.add(getMenuItem(ShowPlayableUnitsAction.id));
 
         add(menu);
     }

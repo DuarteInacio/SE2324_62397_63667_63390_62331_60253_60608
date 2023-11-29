@@ -42,7 +42,6 @@ import java.util.Collection;
 import java.util.List;
 import java.util.Locale;
 import java.util.Map;
-import java.util.function.Consumer;
 import java.util.function.Predicate;
 import java.util.logging.Level;
 import java.util.stream.Collectors;
@@ -2795,5 +2794,10 @@ public class SwingGUI extends GUI {
     @Override
     public boolean canGameChangingModsBeAdded() {
         return getFreeColClient().getGame() == null;
+    }
+
+    @Override
+    public FreeColPanel showPlayableUnitsPanel() {
+        return this.widgets.showPlayableUnitsPanel();
     }
 }

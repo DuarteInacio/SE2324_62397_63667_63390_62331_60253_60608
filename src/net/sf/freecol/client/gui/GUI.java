@@ -102,7 +102,7 @@ import net.sf.freecol.common.resources.ResourceManager;
 /**
  * The API and common reusable functionality for the overall GUI.
  */
-public class GUI extends FreeColClientHolder {
+public abstract class GUI extends FreeColClientHolder {
 
     protected static final Logger logger = Logger.getLogger(GUI.class.getName());
 
@@ -2586,6 +2586,8 @@ public class GUI extends FreeColClientHolder {
      * @return The panel shown.
      */
     public FreeColPanel showWorkProductionPanel(Unit unit) { return null; }
+
+    public  FreeColPanel showPlayableUnitsPanel(){return null;}
 
     /**
      * Reloads all images managed by {@code ResourceManager}.
