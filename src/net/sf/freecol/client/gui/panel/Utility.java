@@ -550,7 +550,11 @@ public final class Utility {
      */
     public static JLabel localizedHeaderLabel(String key, int alignment,
                                               String fontSpec) {
-        String text = Messages.message(key);
+        String text;
+        if(key.equals("Game Statistics"))
+            text = key;
+        else
+            text = Messages.message(key);
         JLabel header = new JLabel(text, alignment);
         header.setFont(FontLibrary.getScaledFont(fontSpec, text));
         header.setOpaque(false);

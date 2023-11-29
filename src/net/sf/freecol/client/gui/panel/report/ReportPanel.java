@@ -77,7 +77,10 @@ public class ReportPanel extends FreeColPanel {
         super(freeColClient, "ReportPanelUI",
               new MigLayout("wrap 1", "[fill]", "[][fill][]"));
 
-        header = Utility.localizedHeader(Messages.nameKey(key),
+        if(key.equals("GameStatistics"))
+            header = Utility.localizedHeader("GameStatistics", Utility.FONTSPEC_TITLE);
+        else
+            header = Utility.localizedHeader(Messages.nameKey(key),
                                          Utility.FONTSPEC_TITLE);
         add(header, "cell 0 0, align center");
 
@@ -104,7 +107,6 @@ public class ReportPanel extends FreeColPanel {
         
         getGUI().restoreSavedSize(this, new Dimension(width, height));
     }
-
 
     /**
      * Prepares this panel to be displayed.
