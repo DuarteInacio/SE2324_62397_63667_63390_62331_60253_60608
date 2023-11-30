@@ -1169,13 +1169,12 @@ public final class InGameController extends FreeColClientHolder {
 
         // Clear any panels first
         if (getGUI().isPanelShowing()) return;
-            List<Unit> units = transform(player.getUnits(), Unit::isCandidateForNextActiveUnit);
-            if (!units.isEmpty()) {
-                // Modal dialog takes over
-                getGUI().showPlayableUnitsPanel(units);
-                return;
-            }
-        }
+
+        List<Unit> units = transform(player.getUnits(), Unit::isCandidateForNextActiveUnit);
+
+        // Modal dialog takes over
+        getGUI().showPlayableUnitsPanel(units);
+    }
 
 
 
