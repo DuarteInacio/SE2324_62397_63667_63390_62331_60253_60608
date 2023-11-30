@@ -1160,6 +1160,24 @@ public final class InGameController extends FreeColClientHolder {
         askServer().endTurn();
     }
 
+    /**
+     * Show all the units.
+     *
+     */
+    private void doShowPlayableUnits() {
+        final Player player = getMyPlayer();
+
+        // Clear any panels first
+        if (getGUI().isPanelShowing()) return;
+            List<Unit> units = transform(player.getUnits(), Unit::isCandidateForNextActiveUnit);
+            if (!units.isEmpty()) {
+                // Modal dialog takes over
+                getGUI().showPlayableUnitsPanel(units);
+                return;
+            }
+        }
+
+
 
     // Movement support.
 
@@ -3407,6 +3425,15 @@ public final class InGameController extends FreeColClientHolder {
         }
 
         doEndTurn(showDialog && getClientOptions().getBoolean(ClientOptions.SHOW_END_TURN_DIALOG));
+    }
+
+    /**
+     * Shows all the units.
+     *
+     * Called from ShowPlayableUnitsAction, GUI.showPlayableUnitsPanel
+     */
+    public void showPlayableUnits() {
+        doShowPlayableUnits();
     }
 
     /**

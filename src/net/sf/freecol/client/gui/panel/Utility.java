@@ -551,7 +551,7 @@ public final class Utility {
     public static JLabel localizedHeaderLabel(String key, int alignment,
                                               String fontSpec) {
         String text;
-        if(key.equals("Game Statistics"))
+        if(key.equals("Game Statistics") || key.equals("Units"))
             text = key;
         else
             text = Messages.message(key);

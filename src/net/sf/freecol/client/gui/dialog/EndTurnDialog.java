@@ -70,7 +70,7 @@ public final class EndTurnDialog extends FreeColConfirmDialog {
      * toString() method, but the toString() method of FreeCol objects
      * provides debugging information rather than a searchable name.
      */
-    private static class UnitWrapper {
+    public static class UnitWrapper {
 
         public final Unit unit;
         public final String name;

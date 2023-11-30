@@ -10,7 +10,7 @@ public class ShowPlayableUnitsAction extends FreeColAction{
 
 
     /**
-     * Creates a new {@code OpenStatisticsPanelAction}.
+     * Creates a new {@code OpenPlayableUnitsPanelAction}.
      *
      * @param freeColClient The {@code FreeColClient} for the game.
      */
@@ -20,8 +20,7 @@ public class ShowPlayableUnitsAction extends FreeColAction{
 
     @Override
     public void actionPerformed(ActionEvent ae) {
-
-        getGUI().showPlayableUnitsPanel();
+        igc().showPlayableUnits();
     }
 
 }

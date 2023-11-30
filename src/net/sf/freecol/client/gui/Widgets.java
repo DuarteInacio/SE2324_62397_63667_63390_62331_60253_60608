@@ -26,8 +26,7 @@ import java.util.List;
 import java.util.Map;
 import java.util.logging.Logger;
 
-import javax.swing.ImageIcon;
-import javax.swing.SwingUtilities;
+import javax.swing.*;
 import javax.swing.filechooser.FileFilter;
 
 import net.sf.freecol.client.FreeColClient;
@@ -1312,10 +1311,10 @@ public final class Widgets {
     }
 
 
-    public FreeColPanel showPlayableUnitsPanel() {
+    public FreeColPanel showPlayableUnitsPanel(List<Unit> units) {
         PlayableUnitsPanel panel = this.canvas.getExistingFreeColPanel(PlayableUnitsPanel.class);
         if (panel == null) {
-            panel = new PlayableUnitsPanel(this.freeColClient);
+            panel = new PlayableUnitsPanel(this.freeColClient, units);
             this.canvas.showFreeColPanel(panel, PopupPosition.CENTERED_RIGHT, true);
         }
         return panel;
