@@ -140,6 +140,7 @@ public class SwingGUI extends GUI {
         CENTERED,
         CENTERED_LEFT,
         CENTERED_RIGHT,
+        FULL_RIGHT,
         
         /**
          * Places centered even this means overlapping components.

@@ -1315,7 +1315,7 @@ public final class Widgets {
         PlayableUnitsPanel panel = this.canvas.getExistingFreeColPanel(PlayableUnitsPanel.class);
         if (panel == null) {
             panel = new PlayableUnitsPanel(this.freeColClient, units);
-            this.canvas.showFreeColPanel(panel, PopupPosition.CENTERED_RIGHT, true);
+            this.canvas.showFreeColPanel(panel, PopupPosition.FULL_RIGHT, true);
         }
         return panel;
     }

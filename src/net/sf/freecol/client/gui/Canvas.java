@@ -584,6 +584,11 @@ public final class Canvas extends JDesktopPane {
                 x = ((getWidth() - width) * 3) / 4;
                 y = (getHeight() - height) / 2;
                 break;
+            case FULL_RIGHT:
+                x = (getWidth() - width);
+                y = (getHeight() - height);
+                break;
+
             case ORIGIN:
                 x = y = 0;
                 break;

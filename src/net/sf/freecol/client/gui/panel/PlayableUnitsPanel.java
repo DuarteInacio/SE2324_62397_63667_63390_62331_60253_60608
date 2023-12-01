@@ -3,14 +3,9 @@ package net.sf.freecol.client.gui.panel;
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.image.BufferedImage;
-import java.util.Collection;
-import java.util.EnumMap;
 import java.util.List;
-import java.util.Map;
 import java.util.logging.Logger;
 
-import javax.swing.*;
-import javax.swing.border.EmptyBorder;
 import javax.swing.event.ListSelectionEvent;
 import javax.swing.event.ListSelectionListener;
 import javax.swing.plaf.PanelUI;
@@ -18,52 +13,25 @@ import javax.swing.plaf.PanelUI;
 import net.miginfocom.swing.MigLayout;
 
 import net.sf.freecol.client.FreeColClient;
-import net.sf.freecol.client.gui.ImageLibrary;
-import net.sf.freecol.client.gui.dialog.EndTurnDialog;
-import net.sf.freecol.client.gui.label.MarketLabel;
-import net.sf.freecol.client.gui.panel.*;
-import net.sf.freecol.client.gui.panel.report.ReportPanel;
 import net.sf.freecol.client.gui.plaf.FreeColSelectedPanelUI;
-import net.sf.freecol.common.debug.FreeColDebugger;
 import net.sf.freecol.common.i18n.Messages;
-import net.sf.freecol.common.model.*;
-import net.sf.freecol.common.model.FoundingFather.FoundingFatherType;
-
-import static net.sf.freecol.common.util.CollectionUtils.*;
 
 import java.awt.Component;
 import java.awt.Dimension;
 import java.awt.Font;
-import java.awt.event.ActionEvent;
-import java.awt.image.BufferedImage;
-import java.util.List;
-import java.util.logging.Logger;
 
 import javax.swing.AbstractAction;
 import javax.swing.DefaultListModel;
 import javax.swing.ImageIcon;
-import javax.swing.JFrame;
 import javax.swing.JLabel;
 import javax.swing.JList;
 import javax.swing.JPanel;
 import javax.swing.JScrollPane;
-import javax.swing.JTextArea;
 import javax.swing.KeyStroke;
 import javax.swing.ListCellRenderer;
 import javax.swing.ListModel;
 import javax.swing.SwingConstants;
-import javax.swing.event.ListSelectionEvent;
-import javax.swing.event.ListSelectionListener;
-import javax.swing.plaf.PanelUI;
-
-import net.miginfocom.swing.MigLayout;
-import net.sf.freecol.client.FreeColClient;
-import net.sf.freecol.client.gui.panel.MigPanel;
-import net.sf.freecol.client.gui.panel.Utility;
-import net.sf.freecol.client.gui.plaf.FreeColSelectedPanelUI;
-import net.sf.freecol.common.i18n.Messages;
 import net.sf.freecol.common.model.Player;
-import net.sf.freecol.common.model.StringTemplate;
 import net.sf.freecol.common.model.Unit;
 
 
@@ -72,12 +40,6 @@ public class PlayableUnitsPanel extends FreeColPanel {
 
     private static final Logger logger = Logger.getLogger(PlayableUnitsPanel.class.getName());
 
-    /**
-     * We need to wrap the Unit class in order to make the JList
-     * support keystroke navigation.  JList.getNextMatch uses the
-     * toString() method, but the toString() method of FreeCol objects
-     * provides debugging information rather than a searchable name.
-     */
     public static class UnitWrapper {
 
         public final Unit unit;
@@ -179,7 +141,7 @@ public class PlayableUnitsPanel extends FreeColPanel {
         final Player player = getMyPlayer();
 
         // Title
-        JLabel header = Utility.localizedHeader(Messages.nameKey("Units"),
+        JLabel header = Utility.localizedHeader("Units",
                 Utility.FONTSPEC_TITLE);
 
         DefaultListModel<PlayableUnitsPanel.UnitWrapper> model = new DefaultListModel<>();
@@ -213,9 +175,6 @@ public class PlayableUnitsPanel extends FreeColPanel {
         panel.add(header);
         panel.add(listScroller, "newline 10");
         panel.setSize(panel.getPreferredSize());
-
-        ImageIcon icon = new ImageIcon(
-                getImageLibrary().getScaledNationImage(player.getNation()));
 
         add(okButton, BorderLayout.PAGE_END);
 
